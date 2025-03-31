@@ -61,7 +61,9 @@ npm run start:prod
 |------------------|--------|-------------------------------------|------------|
 | /auth/login      | POST   | Authenticate user and return token  | Public     |
 | /auth/register   | POST   | Register a new user                 | Public     |
-| /auth/me         | GET    | Get current user profile            | Authorized |
+| /auth/me         | POST    | Custom login reserved for my own user            | Authorized |
+
+{FB5D7B72-4B96-4805-ACA1-80B58285C875}.png
 
 ### Users Module
 | Endpoint          | Method | Description                           | Access      |
@@ -69,8 +71,10 @@ npm run start:prod
 | /users            | GET    | List all users                        | Admin only  |
 | /users/:id        | GET    | Get user by ID                        | Admin only  |
 | /users            | POST   | Create a new user                     | Admin only  |
-| /users/:id        | PUT    | Update a user                         | Admin only  |
+| /users/:id        | PATCH    | Update a user                         | Admin only  |
 | /users/:id        | DELETE | Delete a user                         | Admin only  |
+
+{0D61F12B-C479-4326-ACE4-5780B4C1E521}.png
 
 ### Sales Module
 | Endpoint                 | Method | Description                        | Access                |
@@ -80,7 +84,9 @@ npm run start:prod
 | /sales/user              | GET    | Get current user's sales           | Authorized           |
 | /sales/analytics         | GET    | Get sales analytics                | Admin only           |
 | /sales/:id               | GET    | Get sale by ID                     | Admin/Sale owner     |
-| /sales/:id/status        | PUT    | Update sale status                 | Admin only           |
+| /sales/:id/status        | PATCH    | Update sale status                 | Admin only           |
+
+{72BF6B09-B896-4B63-83AF-9D9078A4812E}.png
 
 ### Templates Module
 | Endpoint             | Method | Description                        | Access                |
@@ -88,8 +94,10 @@ npm run start:prod
 | /templates           | GET    | List all templates                 | Authorized           |
 | /templates/:id       | GET    | Get template by ID                 | Authorized           |
 | /templates           | POST   | Create a new template              | Admin only           |
-| /templates/:id       | PUT    | Update a template                  | Admin only           |
+| /templates/:id       | PATCH    | Update a template                  | Admin only           |
 | /templates/:id       | DELETE | Delete a template                  | Admin only           |
+
+{01043723-B15C-480E-B2B4-7A50520816D2}.png
 
 ## Authentication
 
